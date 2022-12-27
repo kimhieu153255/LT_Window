@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="images\knight.jpg" />
+    <None Remove="images\pikeman.jpg" />
+    <None Remove="images\swordman.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Fluent.Ribbon" Version="9.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="images\knight.jpg" />
+    <Resource Include="images\pikeman.jpg" />
+    <Resource Include="images\swordman.jpg" />
+  </ItemGroup>
+
+</Project>
